@@ -12,7 +12,7 @@ $flow_steps = [
     [
         "num" => 1,
         "title" => "Lead Captured",
-        "sub" => "Forms, ads, landing pages, WhatsApp",
+        "sub" => "Capture leads from ads, website & landing pages",
         "icon" => '
         <svg width="58" height="52" viewBox="0 0 58 52" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="4" y="16" width="40" height="30" rx="4" />
@@ -28,7 +28,7 @@ $flow_steps = [
     [
         "num" => 2,
         "title" => "Smart Segmentation",
-        "sub" => "Industry, source, intent, behaviour",
+        "sub" => "Qualify leads using AI-based filtering",
         "icon" => '
         <svg width="58" height="56" viewBox="0 0 58 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="16" cy="8" r="3.5" class="flow-step2-in-1" />
@@ -41,7 +41,8 @@ $flow_steps = [
     [
         "num" => 3,
         "title" => "Automated Nurturing",
-        "sub" => "Email, WhatsApp, alerts, reminders",
+        "sub" => "Automate follow-ups via WhatsApp & email
+",
         "icon" => '
         <svg width="64" height="56" viewBox="0 0 64 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M10 4h22a4 4 0 014 4v12a4 4 0 01-4 4H18l-8 5v-5a4 4 0 01-4-4V8a4 4 0 014-4z" stroke-dasharray="5 3" class="flow-step3-bubble" />
@@ -58,7 +59,7 @@ $flow_steps = [
     [
         "num" => 4,
         "title" => "Engagement Analytics",
-        "sub" => "Opens, clicks, replies, drop-offs",
+        "sub" => "Score leads based on behavior & intent",
         "icon" => '
         <svg width="60" height="54" viewBox="0 0 60 54" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="4" y="36" width="9" height="14" rx="2" class="flow-step4-bar flow-step4-bar-1" />
@@ -71,7 +72,7 @@ $flow_steps = [
     [
         "num" => 5,
         "title" => "Lead Scoring",
-        "sub" => "Intent score, fit score, urgency score",
+        "sub" => "Retarget drop-offs across platforms",
         "icon" => '
         <svg width="60" height="56" viewBox="0 0 60 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <g class="flow-step5-profile">
@@ -88,7 +89,7 @@ $flow_steps = [
     [
         "num" => 6,
         "title" => "CRM + Sales Handoff",
-        "sub" => "Sync, assign, notify, follow-up",
+        "sub" => "Track conversions with CRM integration",
         "icon" => '
         <svg width="66" height="56" viewBox="0 0 66 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="4" y="8" width="40" height="40" rx="5" />
@@ -133,10 +134,10 @@ $metrics = [
 
 // Sub services list
 $sub_services = [
-    ["label" => "Lead Generation", "tag" => "Acquire", "tile" => "tile-dashboard"],
-    ["label" => "Lead Nurturing", "tag" => "Engage", "tile" => "tile-orange"],
-    ["label" => "Lead Scoring", "tag" => "Qualify", "tile" => "tile-mint"],
-    ["label" => "Retargeting Automation", "tag" => "Recover", "tile" => "tile-cream-warm"]
+    ["label" => "AI Lead Generation", "tag" => "Acquire", "tile" => "tile-dashboard"],
+    ["label" => "AI Lead Nurturing", "tag" => "Engage", "tile" => "tile-orange"],
+    ["label" => "AI Lead Scoring", "tag" => "Qualify", "tile" => "tile-mint"],
+    ["label" => "AI Retargeting Automation", "tag" => "Recover", "tile" => "tile-cream-warm"]
 ];
 
 // Capabilities list
@@ -145,13 +146,12 @@ $capabilities = [
         "id" => "acquire",
         "icon" => "bi bi-crosshair",
         "tag" => "01 · Acquire",
-        "title" => "Lead Generation",
-        "copy" => "AI agents that hunt on autopilot — scraping intent signals, enriching prospects and pushing high-fit leads into your pipeline every single day.",
+        "title" => "AI Lead Generation",
+        "copy" => "Generate high-quality leads using intent-based targeting and performance marketing.",
         "bullets" => [
-            "Intent-based prospect discovery (LinkedIn, web, ad clicks)",
-            "Auto-enriched profiles with firmographic + technographic data",
-            "Multi-channel outbound: email, WhatsApp, LinkedIn DMs",
-            "Warm handoff to sales with full conversation history"
+            "Meta, Google & LinkedIn ads",
+            "High-converting landing pages",
+            "Funnel optimization"
         ],
         "tile" => "tile-dashboard"
     ],
@@ -159,13 +159,12 @@ $capabilities = [
         "id" => "engage",
         "icon" => "bi bi-fire",
         "tag" => "02 · Engage",
-        "title" => "Lead Nurturing",
-        "copy" => "Personalised, on-brand nurture journeys generated per lead — across email, WhatsApp and SMS — so no prospect ever goes cold in your CRM.",
+        "title" => "AI Lead Nurturing",
+        "copy" => "Convert cold leads into buyers with automated engagement.",
         "bullets" => [
-            "GPT-written sequences tuned to buyer stage & industry",
-            "Behavioural triggers (email opens, page visits, replies)",
-            "WhatsApp broadcast + 1:1 conversational nurture",
-            "Auto-pause when a lead becomes sales-ready"
+            "WhatsApp automation",
+            "Email sequences",
+            "Personalized messaging"
         ],
         "tile" => "tile-orange"
     ],
@@ -173,13 +172,12 @@ $capabilities = [
         "id" => "qualify",
         "icon" => "bi bi-speedometer2",
         "tag" => "03 · Qualify",
-        "title" => "Lead Scoring",
-        "copy" => "A live scoring model that reads intent, fit and engagement — routing hot leads to sales in seconds and quietly nurturing the rest until they're ready.",
+        "title" => "AI Lead Scoring",
+        "copy" => "Focus only on leads that matter.",
         "bullets" => [
-            "Fit score (ICP match) + intent score (behaviour)",
-            "Real-time re-scoring on every touchpoint",
-            "SLA-driven routing to the right rep, instantly",
-            "Transparent 'why this score' explanations for sales"
+            "Behavior tracking",
+            "Intent signals",
+            "Priority-based follow-ups"
         ],
         "tile" => "tile-mint"
     ],
@@ -187,13 +185,12 @@ $capabilities = [
         "id" => "recover",
         "icon" => "bi bi-arrow-repeat",
         "tag" => "04 · Recover",
-        "title" => "Retargeting Automation",
-        "copy" => "Bring lost, dormant and drop-off leads back — with AI-generated creative, Meta CAPI-tracked audiences and WhatsApp win-back flows that actually convert.",
+        "title" => "AI Retargeting Automation",
+        "copy" => "Bring back lost customers and maximize ROI.",
         "bullets" => [
-            "Server-side retargeting via Meta CAPI + Google Enhanced Conversions",
-            "Auto-built lookalike & win-back audience segments",
-            "AI-generated ad variants, refreshed weekly",
-            "WhatsApp + email win-back journeys for cold CRM records"
+            "Dynamic retargeting ads",
+            "CRM audience sync",
+            "Funnel-based messaging"
         ],
         "tile" => "tile-cream-warm"
     ]
@@ -203,26 +200,26 @@ $capabilities = [
 $build_steps = [
     [
         "n" => "01",
-        "t" => "Growth Audit",
-        "d" => "We map your funnel, tools and drop-off points — and pinpoint the 3 highest-leverage automations first.",
+        "t" => "Audit & Strategy",
+        "d" => "Analyze funnel, identify gaps, and map growth opportunities",
         "icon" => "bi bi-funnel"
     ],
     [
         "n" => "02",
-        "t" => "Design",
-        "d" => "We wireframe the AI systems, the data flow, and the KPIs each one moves — before a single line of code.",
+        "t" => "Funnel Design",
+        "d" => "Create conversion-focused journeys and automation flows",
         "icon" => "bi bi-diagram-3"
     ],
     [
         "n" => "03",
-        "t" => "Build & Wire",
-        "d" => "AI agents, prompt logic, CRM & ad-platform integrations — deployed and connected to what you already use.",
+        "t" => "Setup & Integration",
+        "d" => "Implement CRM, ads, and automation systems",
         "icon" => "bi bi-lightning-charge"
     ],
     [
         "n" => "04",
-        "t" => "Optimise",
-        "d" => "Weekly performance reviews, model tuning, and new plays added as your pipeline matures.",
+        "t" => "Optimize & Scale",
+        "d" => "Continuously improve performance and ROI",
         "icon" => "bi bi-graph-up-arrow"
     ]
 ];
@@ -230,23 +227,23 @@ $build_steps = [
 // Why nDimensions Us list
 $why_us_items = [
     [
-        "t" => "Outcomes, not features",
-        "d" => "Every system ties to a hard number — MQLs, response time, CAC, or hours saved.",
+        "t" => "Performance-focused",
+        "d" => "We optimize for revenue, not vanity metrics",
         "icon" => "bi bi-crosshair"
     ],
     [
-        "t" => "Connected, not siloed",
-        "d" => "Leads flow across gen &rarr; nurture &rarr; scoring &rarr; retargeting without manual handoffs.",
+        "t" => "Fully integrated system",
+        "d" => "Ads, CRM, WhatsApp — all connected",
         "icon" => "bi bi-diagram-3"
     ],
     [
-        "t" => "Plugs into your stack",
-        "d" => "HubSpot, Salesforce, Zoho, WhatsApp, Meta, Google Ads, Sheets — no rip-and-replace.",
+        "t" => "Built for scalability",
+        "d" => "Designed to grow with your business",
         "icon" => "bi bi-arrow-repeat"
     ],
     [
-        "t" => "Owned by you",
-        "d" => "You keep the data, the prompts, the models and the workflows. We hand it all over.",
+        "t" => "Complete ownership",
+        "d" => "You control your data and systems",
         "icon" => "bi bi-shield-check"
     ]
 ];
@@ -254,16 +251,16 @@ $why_us_items = [
 // Customer Cases
 $customer_cases = [
     [
-        "tag" => "B2B SaaS",
-        "title" => "Global SaaS platform",
-        "quote" => "We doubled qualified pipeline in a quarter without adding a single SDR. The scoring model is now our best sales rep.",
-        "body" => "Lead scoring + nurture stack reduced their sales cycle by 22% and lifted MQL&rarr;SQL conversion from 14% to 31%."
+        "tag" => "Case Study",
+        "title" => "",
+        "quote" => "We doubled our qualified pipeline in 90 days with automation.",
+        "body" => ""
     ],
     [
-        "tag" => "Retail",
-        "title" => "Enterprise retail brand",
-        "quote" => "For the first time our WhatsApp, ads and CRM speak the same language. Dormant customers are coming back on their own.",
-        "body" => "Retargeting automation recovered 18% of dropped-off checkout and enquiry leads within 60 days."
+        "tag" => "Case Study",
+        "title" => "",
+        "quote" => "WhatsApp + CRM automation increased our conversions by 3X.",
+        "body" => ""
     ]
 ];
 
@@ -276,23 +273,23 @@ $integration_tools = [
 $faqs = [
     [
         "q" => "Will this replace our sales team?",
-        "a" => "No. It replaces the manual, repetitive work that keeps your sales team from actually selling — enrichment, first-touch replies, follow-ups, scoring, list-building. Reps close more because they only see hot, context-rich leads."
+        "a" => "No. It supports your team by automating repetitive tasks and improving lead quality."
     ],
     [
-        "q" => "Do we need a specific CRM to start?",
-        "a" => "We work with HubSpot, Salesforce, Zoho, Pipedrive, Close and most modern CRMs. If your CRM has an API, we can wire the systems in. No CRM? We'll help you pick a lean one first."
+        "q" => "Do we need a CRM?",
+        "a" => "No. We can integrate with your existing system or set one up."
     ],
     [
-        "q" => "How long until we see results?",
-        "a" => "First automation goes live in 2–3 weeks. The full 4-system sales engine (gen + nurture + scoring + retargeting) is usually live in 4–6 weeks, with measurable pipeline impact from week 6 onwards."
+        "q" => "How fast can we see results?",
+        "a" => "Most businesses see improvements within 2–4 weeks."
     ],
     [
-        "q" => "What about data privacy and prompt IP?",
-        "a" => "You own everything — the prompts, the models, the workflows, the data. We deploy inside your accounts (OpenAI/Anthropic/etc.), not ours. Full handover documentation included."
+        "q" => "What budget is required?",
+        "a" => "Flexible budgets based on your business goals."
     ],
     [
-        "q" => "Can this work with WhatsApp for lead follow-up?",
-        "a" => "Yes — WhatsApp is a core channel. We use the official WhatsApp Business API for compliant broadcast, 1:1 conversational nurture, and retargeting win-back flows."
+        "q" => "Does it work with WhatsApp?",
+        "a" => "Yes. WhatsApp automation is a core part of the system."
     ]
 ];
 ?>
@@ -307,18 +304,18 @@ $faqs = [
         <div class="col-lg-6 fade-up">
           <span class="eyebrow text-cream">AI Sales Automation</span>
           <h1 class="mt-4 display-3 fw-medium text-cream lh-sm">
-            Your sales team's <span class="serif text-lime">always-on</span><br>revenue engine.
+            AI Sales Automation That Turns <span class="serif text-lime">Leads<br> Into Revenue</span> — Automatically
           </h1>
           <p class="mt-4 text-cream-muted lead max-w-500" style="font-size: 1.1rem; line-height: 1.6;">
-            Four connected AI systems that find, qualify, nurture and win back buyers — plugged straight into your CRM, WhatsApp, ads and website. No new tools. No new team. Just more pipeline.
+            Stop chasing cold leads. Start closing high-intent prospects with AI-powered lead generation, nurturing, and conversion systems.<br><br>We help you generate, nurture, score, and convert leads automatically using CRM, WhatsApp automation, and AI workflows.
           </p>
           <div class="mt-4 pt-2 d-flex flex-wrap gap-3">
             <button class="btn-lime">
-              Book AI Growth Audit
+              🚀 Get Free AI Growth Audit
               <i class="bi bi-arrow-up-right ms-1"></i>
             </button>
             <button class="btn-outline-cream">
-              See Sales Systems
+              📞 Book Strategy Call
             </button>
           </div>
 
@@ -326,15 +323,15 @@ $faqs = [
           <div class="mt-5 d-flex flex-wrap gap-x-4 gap-y-2 text-cream-muted small">
             <span class="d-flex align-items-center gap-2 me-4">
               <i class="bi bi-check-lg text-lime" style="font-size: 1.1rem;"></i>
-              Works with HubSpot, Salesforce, Zoho
+              Increase qualified leads
             </span>
             <span class="d-flex align-items-center gap-2 me-4">
               <i class="bi bi-check-lg text-lime" style="font-size: 1.1rem;"></i>
-              WhatsApp + Meta CAPI native
+              Automate follow-ups 
             </span>
             <span class="d-flex align-items-center gap-2">
               <i class="bi bi-check-lg text-lime" style="font-size: 1.1rem;"></i>
-              Live in 4–6 weeks
+              Close deals faster
             </span>
           </div>
         </div>
@@ -376,9 +373,11 @@ $faqs = [
         <h2 class="display-5 text-forest mb-2">
           AI Sales Automation <span class="serif">Flow</span>
         </h2>
-        <p class="text-dark-muted small max-w-500 mx-auto mb-5" style="font-size: 0.95rem;">
-          Capture, segment, nurture, score and move every qualified lead into your sales pipeline automatically.
+        <h3 class="text-dark-muted small max-w-500 mx-auto mb-3" style="font-size: 1rem;">From Click to Conversion — Fully Automated</h3>
+        <p class="text-dark-muted small max-w-500 mx-auto" style="font-size: 0.95rem;">
+          <b>Capture → Qualify → Nurture → Convert → Scale</b>
         </p>
+        <p class="text-dark-muted small max-w-500 mx-auto mb-5" style="font-size: 0.95rem;">Automate your entire sales journey using AI-powered workflows and real-time data tracking.</p>
 
         <!-- Cards Row -->
         <div class="stats-steps-container">
@@ -441,11 +440,11 @@ $faqs = [
     <div class="container max-w-1300 px-4 py-5">
       <span class="eyebrow">The Sales Engine</span>
       <h2 class="mt-4 display-4 fw-medium text-forest max-w-4xl lh-sm">
-        Four systems. <span class="serif">One sales engine.</span> Built to convert — end to end.
+        4 <span class="serif">Pillars of </span>AI Sales Automation
       </h2>
-      <p class="mt-4 text-dark-muted lead max-w-600">
+      <!-- <p class="mt-4 text-dark-muted lead max-w-600">
         Every stage of your funnel gets an AI layer that removes manual work, speeds up response, and compounds over time.
-      </p>
+      </p> -->
 
       <div class="mt-5 row row-cols-1 row-cols-md-2 g-4 g-lg-5">
         <?php foreach ($capabilities as $cap): ?>
@@ -493,7 +492,7 @@ $faqs = [
     <div class="container max-w-1300 px-4 py-5">
       <span class="eyebrow text-cream">How we build it</span>
       <h2 class="mt-4 display-4 fw-medium text-cream max-w-3xl lh-sm">
-        From audit to <span class="serif text-lime">production</span> in 4–6 weeks.
+        Proven 4-Step <span class="serif text-lime">Implementation Framework</span>
       </h2>
 
       <div class="mt-5 row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -522,7 +521,7 @@ $faqs = [
     <div class="container max-w-1300 px-4 py-5">
       <span class="eyebrow">Why nDimensions</span>
       <h2 class="mt-4 display-4 fw-medium text-forest max-w-3xl lh-sm">
-        A sales AI partner that actually <span class="serif">ships</span>.
+        Not an Agency. <span class="serif">Your Revenue Partner.</span>
       </h2>
 
       <div class="mt-5 row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -549,7 +548,7 @@ $faqs = [
     <div class="container max-w-1300 px-4 py-5">
       <span class="eyebrow text-cream">Customer stories</span>
       <h2 class="mt-4 display-4 fw-medium text-cream max-w-3xl lh-sm">
-        Real teams. <span class="serif text-lime">Real pipeline</span>.
+        Real teams. <span class="serif text-lime">Real results</span>.
       </h2>
 
       <div class="mt-5 row row-cols-1 row-cols-md-2 g-4 g-lg-5">
@@ -565,7 +564,7 @@ $faqs = [
                 &ldquo;<?php echo $c['quote']; ?>&rdquo;
               </blockquote>
               <p class="text-cream-muted small max-w-500" style="line-height: 1.6; font-size: 0.95rem;">
-                <span class="text-cream fw-semibold"><?php echo $c['title']; ?></span> — <?php echo $c['body']; ?>
+                <span class="text-cream fw-semibold"><?php echo $c['title']; ?></span><?php if ($c['title'] || $c['body']): ?> — <?php endif; ?><?php echo $c['body']; ?>
               </p>
               
               <div class="mt-5 d-flex align-items-center justify-content-between">
@@ -591,7 +590,7 @@ $faqs = [
         <div class="col-lg-5">
           <span class="eyebrow">Native integrations</span>
           <h2 class="mt-4 h1 fw-medium text-forest lh-sm">
-            Plugs into the tools your <span class="serif">sales team</span> already lives in.
+            Works with the <span class="serif">tools you already use</span>.
           </h2>
         </div>
         <div class="col-lg-7">
@@ -612,8 +611,8 @@ $faqs = [
 
   <!-- CTA Banner Section -->
   <?php
-  $cta_title = 'Turn your CRM into a <span class="serif text-lime">revenue engine</span>.';
-  $cta_desc = 'Start with a free AI Growth Audit. We\'ll map your funnel, spot the top 3 revenue leaks, and show you the exact AI systems that fix them — no pitch deck, just a working plan.';
+  $cta_title = 'Turn Your Sales Funnel Into a <span class="serif text-lime">Revenue Machine</span>';
+  $cta_desc = 'Stop losing leads. Start converting automatically.';
   include __DIR__ . '/cta.php';
   ?>
 </main>

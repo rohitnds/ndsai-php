@@ -130,13 +130,13 @@ function get_retarget_illustration($class = '') {
 
 function get_sales_illustration($title, $class = '') {
     switch ($title) {
-        case 'Lead Generation':
+        case 'AI Lead Generation':
             return get_radar_illustration($class);
-        case 'Lead Nurturing':
+        case 'AI Lead Nurturing':
             return get_nurture_illustration($class);
-        case 'Lead Scoring':
+        case 'AI Lead Scoring':
             return get_scoring_illustration($class);
-        case 'Retargeting Automation':
+        case 'AI Retargeting Automation':
             return get_retarget_illustration($class);
         default:
             return '';

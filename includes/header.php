@@ -68,7 +68,7 @@
       <!-- Col 1 — AI Growth Automation -->
       <div class="mega-col">
         <a
-          href="<?php echo $root_prefix; ?>services/ai-growth-automation"
+          href="<?php echo $root_prefix; ?>services/ai-sales-automation"
           class="mega-col-label mb-2"
           style="background: var(--lime); color: var(--forest);"
         >
@@ -79,7 +79,7 @@
         </p>
         <ul class="mega-list">
           <!-- Newly migrated service highlighted at the top -->
-          <li><a href="<?php echo $root_prefix; ?>services/ai-sales-automation" class="mega-item-simple text-cream" style="color: var(--lime) !important; font-weight: 700;">AI Sales Automation</a></li>
+          <li><a href="<?php echo $root_prefix; ?>services/ai-growth-automation" class="mega-item-simple text-cream" style="color: var(--lime) !important; font-weight: 700;">AI Sales Automation</a></li>
           <li><a href="<?php echo $root_prefix; ?>services/ai-growth-automation#ai-lead-generation" class="mega-item-simple text-cream-muted hover:text-cream">AI Lead Generation</a></li>
           <li><a href="<?php echo $root_prefix; ?>services/ai-growth-automation#ai-lead-qualification" class="mega-item-simple text-cream-muted hover:text-cream">AI Lead Qualification</a></li>
           <li><a href="<?php echo $root_prefix; ?>services/ai-growth-automation#ai-lead-scoring" class="mega-item-simple text-cream-muted hover:text-cream">AI Lead Scoring</a></li>
@@ -149,6 +149,27 @@
           <li><a href="<?php echo $root_prefix; ?>services/ai-seo-content-automation#ai-programmatic-seo" class="mega-item-simple text-cream-muted hover:text-cream">AI Programmatic SEO</a></li>
           <li><a href="<?php echo $root_prefix; ?>services/ai-seo-content-automation#ai-publishing-automation" class="mega-item-simple text-cream-muted hover:text-cream">AI Publishing Automation</a></li>
           <li><a href="<?php echo $root_prefix; ?>services/ai-seo-content-automation#ai-content-audits" class="mega-item-simple text-cream-muted hover:text-cream">AI Content Audits</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 — AI Creative Production -->
+      <div class="mega-col">
+        <a
+          href="<?php echo $root_prefix; ?>services/ai-creative-production"
+          class="mega-col-label mb-2"
+          style="background: rgba(255,255,255,0.06); color: var(--text-cream);"
+        >
+          AI Creative Production <span>&rarr;</span>
+        </a>
+        <p class="mega-col-desc mb-3 px-1 text-cream-muted">
+          Product visuals, videos, ad creatives and content variations at scale.
+        </p>
+        <ul class="mega-list">
+          <li><a href="https://z91.in/emergents-nds/ai-services/ai-product-photography/" class="mega-item-simple text-cream-muted hover:text-cream">AI Product Photography</a></li>
+          <li><a href="https://z91.in/emergents-nds/ai-services/ai-product-photo-editing/" class="mega-item-simple text-cream-muted hover:text-cream">AI Product Photo Editing</a></li>
+          <li><a href="https://z91.in/emergents-nds/ai-services/ai-video-generation/" class="mega-item-simple text-cream-muted hover:text-cream">AI Video Generation</a></li>
+          <li><a href="https://z91.in/emergents-nds/ai-services/ai-ad-creative-automation/" class="mega-item-simple text-cream-muted hover:text-cream">AI Ad Creative Automation</a></li>
+          <li><a href="https://z91.in/emergents-nds/ai-services/ai-visual-content-automation/" class="mega-item-simple text-cream-muted hover:text-cream">AI Visual Content Automation</a></li>
         </ul>
       </div>
     </div>
