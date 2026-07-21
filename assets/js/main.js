@@ -110,7 +110,41 @@
     });
   });
 
-  // 3. Header Scrolled Toggle Class
+  // 3. Hamburger Menu Toggle (for screens <= 1130px)
+  var hamburgerBtn = document.getElementById("hamburgerBtn");
+  var mobileNavMenu = document.getElementById("mobileNavMenu");
+
+  if (hamburgerBtn && mobileNavMenu) {
+    hamburgerBtn.addEventListener("click", function () {
+      var isExpanded = hamburgerBtn.getAttribute("aria-expanded") === "true";
+      hamburgerBtn.setAttribute("aria-expanded", !isExpanded);
+      mobileNavMenu.classList.toggle("active");
+
+      var iconHamburger = hamburgerBtn.querySelector(".icon-hamburger");
+      var iconClose = hamburgerBtn.querySelector(".icon-close");
+
+      if (iconHamburger && iconClose) {
+        iconHamburger.classList.toggle("d-none");
+        iconClose.classList.toggle("d-none");
+      }
+    });
+  }
+
+  // Mobile AI Services Accordion Toggle
+  var mobileServicesToggle = document.getElementById("mobileServicesToggle");
+  var mobileServicesSub = document.getElementById("mobileServicesSub");
+  if (mobileServicesToggle && mobileServicesSub) {
+    mobileServicesToggle.addEventListener("click", function () {
+      mobileServicesSub.classList.toggle("d-none");
+      mobileServicesSub.classList.toggle("d-flex");
+      var chevron = mobileServicesToggle.querySelector(".mobile-chevron");
+      if (chevron) {
+        chevron.classList.toggle("rotated");
+      }
+    });
+  }
+
+  // 4. Header Scrolled Toggle Class
   var handleScroll = function () {
     var header = document.getElementById("siteHeader");
     if (header) {
