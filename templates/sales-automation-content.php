@@ -350,9 +350,9 @@ $faqs = [
                 </div>
                 <div class="position-absolute start-0 top-0 w-100 h-100 z-1" style="background: linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(7,26,18,0.85) 100%);"></div>
                 
-                <div class="position-relative z-3 mt-auto">
-                  <span class="text-uppercase text-cream-muted small tracking-widest" style="font-size: 10px; letter-spacing: 0.18em;"><?php echo $s['tag']; ?></span>
-                  <div class="serif text-cream h3 mt-1 mb-0 leading-none"><?php echo $s['label']; ?></div>
+                <div class="stat-tab position-relative z-3">
+                  <span class="text-uppercase text-cream-muted tracking-widest stat-tag" style="font-size: 10px; letter-spacing: 0.18em;"><?php echo $s['tag']; ?></span>
+<div class="serif text-cream h3 stat-label mt-1 mb-0 leading-none"><?php echo $s['label']; ?></div>
                 </div>
               </a>
             </div>

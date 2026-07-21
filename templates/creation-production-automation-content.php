@@ -350,9 +350,9 @@ $faqs = [
                 </div>
                 <div class="position-absolute start-0 top-0 w-100 h-100 z-1" style="background: linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(7,26,18,0.85) 100%);"></div>
                 
-                <div class="position-relative z-3 mt-auto">
-                  <span class="text-uppercase text-cream-muted small tracking-widest" style="font-size: 10px; letter-spacing: 0.18em;"><?php echo $s['tag']; ?></span>
-                  <div class="serif text-cream h3 mt-1 mb-0 leading-none"><?php echo $s['label']; ?></div>
+                <div class="stat-tab position-relative z-3">
+                  <span class="text-uppercase text-cream-muted tracking-widest stat-tag" style="font-size: 10px; letter-spacing: 0.18em;"><?php echo $s['tag']; ?></span>
+<div class="serif text-cream h3 stat-label mt-1 mb-0 leading-none"><?php echo $s['label']; ?></div>
                 </div>
               </a>
             </div>
@@ -365,10 +365,10 @@ $faqs = [
   </section>
 
   <!-- Flow & Stats Section -->
-  <section class="text-dark py-5" style="background: #efe8dc;">
+  <!-- <section class="text-dark py-5" style="background: #efe8dc;">
     <div class="container max-w-1300 px-4 py-5">
       
-      <!-- Flow Card -->
+   
       <div class="p-4 p-md-5 text-center rounded-5" style="background: #efe8dc; border: 1px solid rgba(14, 42, 30, 0.08);">
         <h2 class="display-5 text-forest mb-2">
           AI Creative Production <span class="serif">Flow</span>
@@ -379,7 +379,7 @@ $faqs = [
         </p>
         <p class="text-dark-muted small max-w-500 mx-auto mb-5" style="font-size: 0.95rem;">Automate your entire creative production journey using AI-powered workflows and real-time performance tracking.</p>
 
-        <!-- Cards Row -->
+     
         <div class="stats-steps-container">
           <?php foreach ($flow_steps as $i => $step): ?>
             <div class="lead-flow-step">
@@ -406,7 +406,7 @@ $faqs = [
       </div>
 
     </div>
-  </section>
+  </section> -->
 
   <!-- Capabilities Section -->
   <section id="capabilities" class="bg-cream text-dark py-5 border-top border-cream-line">
