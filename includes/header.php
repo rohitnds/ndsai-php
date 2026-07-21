@@ -129,9 +129,6 @@
         >
           AI Growth Automation <span>&rarr;</span>
         </a>
-        <p class="mega-col-desc mb-3 px-1 text-cream-muted">
-          Scale outbound prospecting, email pipelines, and CRM systems to accelerate revenue.
-        </p>
         <ul class="mega-list">
           <li><a href="<?php echo $root_prefix; ?>services/ai-growth-automation#ai-lead-generation" class="mega-item-simple text-cream-muted hover:text-cream">AI Lead Generation</a></li>
           <li><a href="<?php echo $root_prefix; ?>services/ai-growth-automation#ai-lead-qualification" class="mega-item-simple text-cream-muted hover:text-cream">AI Lead Qualification</a></li>
@@ -147,13 +144,10 @@
         <a
           href="<?php echo $root_prefix; ?>services/ai-business-automation"
           class="mega-col-label mb-2"
-          style="background: rgba(255,255,255,0.06); color: var(--text-cream);"
+          style="background: var(--lime); color: var(--forest);"
         >
           AI Business Automation <span>&rarr;</span>
         </a>
-        <p class="mega-col-desc mb-3 px-1 text-cream-muted">
-          Streamline operations, document auditing, and approval systems with n8n and Make.
-        </p>
         <ul class="mega-list">
           <li><a href="<?php echo $root_prefix; ?>services/ai-business-automation#business-process-automation" class="mega-item-simple text-cream-muted hover:text-cream">Business Process Automation</a></li>
           <li><a href="<?php echo $root_prefix; ?>services/ai-business-automation#workflow-automation" class="mega-item-simple text-cream-muted hover:text-cream">Workflow Automation</a></li>
@@ -175,13 +169,10 @@
         <a
           href="<?php echo $root_prefix; ?>services/ai-seo-content-automation"
           class="mega-col-label mb-2"
-          style="background: var(--forest-deep); color: var(--lime); border: 1px solid rgba(239, 232, 220, 0.15);"
+          style="background: var(--lime); color: var(--forest);"
         >
           AI SEO &amp; Content Automation <span>&rarr;</span>
         </a>
-        <p class="mega-col-desc mb-3 px-1 text-cream-muted">
-          Generate search traffic with keyword clustering, strategic maps, and CMS publishing.
-        </p>
         <ul class="mega-list">
           <li><a href="<?php echo $root_prefix; ?>services/ai-seo-content-automation#ai-seo-services" class="mega-item-simple text-cream-muted hover:text-cream">AI SEO Services</a></li>
           <li><a href="<?php echo $root_prefix; ?>services/ai-seo-content-automation#aeo-services" class="mega-item-simple text-cream-muted hover:text-cream">AEO Services</a></li>
@@ -204,13 +195,10 @@
         <a
           href="<?php echo $root_prefix; ?>services/ai-creative-production"
           class="mega-col-label mb-2"
-          style="background: rgba(255,255,255,0.06); color: var(--text-cream);"
+          style="background: var(--lime); color: var(--forest);"
         >
           AI Creative Production <span>&rarr;</span>
         </a>
-        <p class="mega-col-desc mb-3 px-1 text-cream-muted">
-          Product visuals, videos, ad creatives and content variations at scale.
-        </p>
         <ul class="mega-list">
           <li><a href="https://z91.in/emergents-nds/ai-services/ai-product-photography/" class="mega-item-simple text-cream-muted hover:text-cream">AI Product Photography</a></li>
           <li><a href="https://z91.in/emergents-nds/ai-services/ai-product-photo-editing/" class="mega-item-simple text-cream-muted hover:text-cream">AI Product Photo Editing</a></li>
