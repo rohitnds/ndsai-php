@@ -224,19 +224,19 @@ include 'includes/header.php';
 
           <!-- Column 1 -->
           <div class="col-12 col-md-4 d-flex flex-column gap-3 gap-md-4">
-            <div class="hero-bento-card hero-bento-h-sm" style="background-image:url('https://picsum.photos/seed/ai-analytics/500/400');">
+            <div class="hero-bento-card hero-bento-h-sm" style="background-image:url('assets/images/hero-laptop-mint.png');">
               <div class="hero-bento-card-body">
                 <span class="hero-bento-label">Business</span>
                 <p class="hero-bento-title">AI Analytics</p>
               </div>
             </div>
-            <div class="hero-bento-card hero-bento-h-lg" style="background-image:url('https://picsum.photos/seed/whatsapp-flow/500/600');">
+            <div class="hero-bento-card hero-bento-h-lg" style="background-image:url('assets/images/hero-phone-orange.png');">
               <div class="hero-bento-card-body">
                 <span class="hero-bento-label">WhatsApp</span>
                 <p class="hero-bento-title">Enquiry Flow</p>
               </div>
             </div>
-            <div class="hero-bento-card hero-bento-h-md" style="background-image:url('https://picsum.photos/seed/shopify-mkt/500/500');">
+            <div class="hero-bento-card hero-bento-h-md" style="background-image:url('assets/images/hero-box-warm.png');">
               <div class="hero-bento-card-body">
                 <span class="hero-bento-label">Ecommerce</span>
                 <p class="hero-bento-title">Shopify Marketing</p>
@@ -246,19 +246,19 @@ include 'includes/header.php';
 
           <!-- Column 2 -->
           <div class="col-12 col-md-4 d-flex flex-column gap-3 gap-md-4">
-            <div class="hero-bento-card hero-bento-h-sm" style="background-image:url('https://picsum.photos/seed/ai-agents/500/400');">
+            <div class="hero-bento-card hero-bento-h-sm" style="background-image:url('assets/images/hero-network-sphere.png');">
               <div class="hero-bento-card-body">
                 <span class="hero-bento-label">Support</span>
                 <p class="hero-bento-title">AI Agents</p>
               </div>
             </div>
-            <div class="hero-bento-card hero-bento-h-md" style="background-image:url('https://picsum.photos/seed/email-auto/500/500');">
+            <div class="hero-bento-card hero-bento-h-md" style="background-image:url('assets/images/hero-envelopes.png');">
               <div class="hero-bento-card-body">
                 <span class="hero-bento-label">Automation</span>
                 <p class="hero-bento-title">Email Automation</p>
               </div>
             </div>
-            <div class="hero-bento-card hero-bento-h-lg" style="background-image:url('https://picsum.photos/seed/content-engine/500/600');">
+            <div class="hero-bento-card hero-bento-h-lg" style="background-image:url('assets/images/hero-stack-cream.png');">
               <div class="hero-bento-card-body">
                 <span class="hero-bento-label">SEO &amp; Content</span>
                 <p class="hero-bento-title">Content Engine</p>
@@ -268,19 +268,19 @@ include 'includes/header.php';
 
           <!-- Column 3 -->
           <div class="col-12 col-md-4 d-flex flex-column gap-3 gap-md-4">
-            <div class="hero-bento-card hero-bento-h-sm" style="background-image:url('https://picsum.photos/seed/creative-ai/500/400');">
+            <div class="hero-bento-card hero-bento-h-sm" style="background-image:url('assets/images/hero-blob-mint.png');">
               <div class="hero-bento-card-body">
                 <span class="hero-bento-label">Design</span>
                 <p class="hero-bento-title">Creative AI</p>
               </div>
             </div>
-            <div class="hero-bento-card hero-bento-h-md" style="background-image:url('https://picsum.photos/seed/crm-auto/500/500');">
+            <div class="hero-bento-card hero-bento-h-md" style="background-image:url('assets/images/hero-laptop-blue.png');">
               <div class="hero-bento-card-body">
                 <span class="hero-bento-label">Sales</span>
                 <p class="hero-bento-title">CRM Automation</p>
               </div>
             </div>
-            <div class="hero-bento-card hero-bento-h-lg" style="background-image:url('https://picsum.photos/seed/meta-capi/500/600');">
+            <div class="hero-bento-card hero-bento-h-lg" style="background-image:url('assets/images/hero-ai-dashboard.png');">
               <div class="hero-bento-card-body">
                 <span class="hero-bento-label">Analytics</span>
                 <p class="hero-bento-title">Meta CAPI</p>
@@ -453,7 +453,7 @@ include 'includes/header.php';
     <div class="row g-5 align-items-stretch">
 
       <!-- ===== LEFT: Copy + Pills (col-lg-5) ===== -->
-      <div class="col-lg-5">
+      <div class="col-lg-6">
         <div class="eyebrow text-dark-muted mb-3">Interactive &middot; Service Finder</div>
 
         <h2 class="display-4 fw-bold text-dark lh-sm mb-4">
@@ -466,37 +466,37 @@ include 'includes/header.php';
         </p>
 
         <div class="flex flex-wrap g-3" id="finderPills">
-            <button type="button" class="finder-pill mt-3 active bg-cream-soft border border-cream-line text-dark fw-semibold rounded-pill px-4 py-2">
+            <button type="button" class="finder-pill mt-3 active bg-cream-soft border border-cream-line text-dark fw-normal rounded-pill px-4 py-2">
               I want better leads
 </button>
-            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-semibold rounded-pill px-4 py-2">
+            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-normal rounded-pill px-4 py-2">
               I want faster follow-ups
             </button>
           
-            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-semibold rounded-pill px-4 py-2">
+            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-normal rounded-pill px-4 py-2">
               I want to automate WhatsApp
             </button>
           
-            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-semibold rounded-pill px-4 py-2">
+            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-normal rounded-pill px-4 py-2">
               I want AI customer support
             </button>
-            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-semibold rounded-pill px-4 py-2">
+            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-normal rounded-pill px-4 py-2">
               I want better SEO/content output
             </button>
-            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-semibold rounded-pill px-4 py-2">
+            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-normal rounded-pill px-4 py-2">
               I want to automate internal work
             </button>
-            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-semibold rounded-pill px-4 py-2">
+            <button type="button" class="finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-normal rounded-pill px-4 py-2">
               I want AI product visuals
             </button>
-            <button type="button" class="text-start finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-semibold rounded-pill px-4 py-2">
+            <button type="button" class="text-start finder-pill mt-3  bg-cream-soft border border-cream-line text-dark fw-normal rounded-pill px-4 py-2">
               I have an AI prototype to make production-ready
             </button>
         </div>
       </div><!-- ← this closing tag was missing, now closes col-lg-5 -->
 
       <!-- ===== RIGHT: Recommendation Panel (col-lg-7) ===== -->
-      <div class="col-lg-7">
+      <div class="col-lg-6">
         <div class="bg-forest rounded-4 p-4 p-lg-5">
           <div class="eyebrow text-lime mb-2">Recommended for you</div>
           <h3 class="text-cream fw-bold display-6 mb-4" id="finderTitle">I want better leads</h3>
@@ -541,7 +541,7 @@ document.addEventListener('DOMContentLoaded', () => {
     finderData[label].forEach(item => {
       itemsEl.insertAdjacentHTML('beforeend', `
         <div class="col-12 col-sm-6">
-          <div class="finder-item-card d-flex align-items-center justify-content-between border rounded-3 p-3">
+          <div class="finder-item-card d-flex align-items-center justify-content-between border rounded-3 p-3 h-100">
             <span class="text-cream fw-medium">
               <i class="bi bi-check-lg text-lime me-2"></i>${item}
             </span>
@@ -587,7 +587,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <div class="col">
         <a href="/work/shopify-brand" class="ratio ratio-4x3 rounded-4 overflow-hidden d-block work-img-wrap">
-          <img src="https://picsum.photos/seed/shopify-brand/600/450" class="object-fit-cover work-img" alt="Leading Shopify brand">
+          <img src="assets/images/brand-shopify.png" class="object-fit-cover work-img" alt="Leading Shopify brand">
         </a>
         <h3 class="serif fs-3 text-dark mt-3 mb-1 fw-semibold">Leading Shopify brand</h3>
         <p class="text-dark-muted mb-0">Ecommerce Automation, Meta CAPI, AI Product Visuals</p>
@@ -595,7 +595,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <div class="col">
         <a href="/work/boutique-hotel" class="ratio ratio-4x3 rounded-4 overflow-hidden d-block work-img-wrap">
-          <img src="https://picsum.photos/seed/boutique-hotel/600/450" class="object-fit-cover work-img" alt="Boutique hotel group">
+          <img src="assets/images/brand-hospitality.png" class="object-fit-cover work-img" alt="Boutique hotel group">
         </a>
         <h3 class="serif fs-3 text-dark mt-3 mb-1 fw-semibold">Boutique hotel group</h3>
         <p class="text-dark-muted mb-0">WhatsApp Booking, Guest Support Agent</p>
@@ -603,7 +603,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <div class="col">
         <a href="/work/healthcare-network" class="ratio ratio-4x3 rounded-4 overflow-hidden d-block work-img-wrap">
-          <img src="https://picsum.photos/seed/healthcare-network/600/450" class="object-fit-cover work-img" alt="Healthcare network">
+          <img src="assets/images/brand-healthcare.png" class="object-fit-cover work-img" alt="Healthcare network">
         </a>
         <h3 class="serif fs-3 text-dark mt-3 mb-1 fw-semibold">Healthcare network</h3>
         <p class="text-dark-muted mb-0">Appointment Automation, Patient FAQ Agent</p>
@@ -611,7 +611,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <div class="col">
         <a href="/work/b2b-saas" class="ratio ratio-4x3 rounded-4 overflow-hidden d-block work-img-wrap">
-          <img src="https://picsum.photos/seed/b2b-saas/600/450" class="object-fit-cover work-img" alt="B2B SaaS platform">
+          <img src="assets/images/brand-b2b.png" class="object-fit-cover work-img" alt="B2B SaaS platform">
         </a>
         <h3 class="serif fs-3 text-dark mt-3 mb-1 fw-semibold">B2B SaaS platform</h3>
         <p class="text-dark-muted mb-0">Lead Scoring, CRM Automation, Sales Agent</p>
@@ -619,7 +619,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <div class="col">
         <a href="/work/real-estate" class="ratio ratio-4x3 rounded-4 overflow-hidden d-block work-img-wrap">
-          <img src="https://picsum.photos/seed/real-estate/600/450" class="object-fit-cover work-img" alt="Real estate developer">
+          <img src="assets/images/brand-realestate.png" class="object-fit-cover work-img" alt="Real estate developer">
         </a>
         <h3 class="serif fs-3 text-dark mt-3 mb-1 fw-semibold">Real estate developer</h3>
         <p class="text-dark-muted mb-0">Property Enquiry Automation, WhatsApp Follow-ups</p>
@@ -627,7 +627,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <div class="col">
         <a href="/work/online-learning" class="ratio ratio-4x3 rounded-4 overflow-hidden d-block work-img-wrap">
-          <img src="https://picsum.photos/seed/online-learning/600/450" class="object-fit-cover work-img" alt="Online learning platform">
+          <img src="assets/images/brand-education.png" class="object-fit-cover work-img" alt="Online learning platform">
         </a>
         <h3 class="serif fs-3 text-dark mt-3 mb-1 fw-semibold">Online learning platform</h3>
         <p class="text-dark-muted mb-0">Content Automation, Lead Nurturing</p>

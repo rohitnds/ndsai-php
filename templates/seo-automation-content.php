@@ -1,18 +1,18 @@
 <?php
 /**
- * nDimensions AI — Sales Automation Page Content
- * Ported from SalesAutomation.jsx and translated to Bootstrap 5 + Custom CSS
+ * nDimensions AI — AI SEO & Content Page Content
+ * Same structure/animations as Sales Automation page, content updated for AI SEO & Content
  */
 
 // Load SVG Helpers
 include_once __DIR__ . '/../includes/illustrations.php';
 
-// Steps Data for the Flow Visualizer
+// Steps Data for the Flow Visualizer (icons & animation classes unchanged)
 $flow_steps = [
     [
         "num" => 1,
-        "title" => "Lead Captured",
-        "sub" => "Capture leads from ads, website & landing pages",
+        "title" => "Topic Captured",
+        "sub" => "Discover topics from search data, competitors & prompts",
         "icon" => '
         <svg width="58" height="52" viewBox="0 0 58 52" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="4" y="16" width="40" height="30" rx="4" />
@@ -27,8 +27,8 @@ $flow_steps = [
     ],
     [
         "num" => 2,
-        "title" => "Smart Segmentation",
-        "sub" => "Qualify leads using AI-based filtering",
+        "title" => "Smart Clustering",
+        "sub" => "Cluster keywords & prompts using AI-based grouping",
         "icon" => '
         <svg width="58" height="56" viewBox="0 0 58 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="16" cy="8" r="3.5" class="flow-step2-in-1" />
@@ -40,8 +40,8 @@ $flow_steps = [
     ],
     [
         "num" => 3,
-        "title" => "Automated Nurturing",
-        "sub" => "Automate follow-ups via WhatsApp & email
+        "title" => "Automated Publishing",
+        "sub" => "Generate & publish content across web & social
 ",
         "icon" => '
         <svg width="64" height="56" viewBox="0 0 64 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -58,8 +58,8 @@ $flow_steps = [
     ],
     [
         "num" => 4,
-        "title" => "Engagement Analytics",
-        "sub" => "Score leads based on behavior & intent",
+        "title" => "Visibility Analytics",
+        "sub" => "Track rankings, AI citations & content performance",
         "icon" => '
         <svg width="60" height="54" viewBox="0 0 60 54" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="4" y="36" width="9" height="14" rx="2" class="flow-step4-bar flow-step4-bar-1" />
@@ -71,8 +71,8 @@ $flow_steps = [
     ],
     [
         "num" => 5,
-        "title" => "Lead Scoring",
-        "sub" => "Retarget drop-offs across platforms",
+        "title" => "AI Visibility Scoring",
+        "sub" => "Score content for search & AI-answer visibility",
         "icon" => '
         <svg width="60" height="56" viewBox="0 0 60 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <g class="flow-step5-profile">
@@ -88,12 +88,12 @@ $flow_steps = [
     ],
     [
         "num" => 6,
-        "title" => "CRM + Sales Handoff",
-        "sub" => "Track conversions with CRM integration",
+        "title" => "Distribution + Handoff",
+        "sub" => "Sync content to CMS, social & analytics platforms",
         "icon" => '
         <svg width="66" height="56" viewBox="0 0 66 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="4" y="8" width="40" height="40" rx="5" />
-            <text x="10" y="24" font-size="8" font-weight="700" fill="#b5f23d" stroke="none" font-family="sans-serif" letter-spacing="0.5">CRM</text>
+            <text x="10" y="24" font-size="8" font-weight="700" fill="#b5f23d" stroke="none" font-family="sans-serif" letter-spacing="0.5">CMS</text>
             <line x1="10" y1="30" x2="34" y2="30" class="flow-step6-txt-1" />
             <line x1="10" y1="36" x2="34" y2="36" class="flow-step6-txt-2" />
             <line x1="10" y1="42" x2="28" y2="42" class="flow-step6-txt-3" />
@@ -111,86 +111,86 @@ $flow_steps = [
 // Stats metrics array
 $metrics = [
     [
-        "num" => "3.4&times;",
-        "head" => "more sales-qualified leads",
-        "sub" => "vs. non-automated funnels — nDimensions client average."
+        "num" => "4.1&times;",
+        "head" => "more organic traffic",
+        "sub" => "vs. manual content programs — nDimensions client average."
     ],
     [
-        "num" => "68%",
-        "head" => "faster lead follow-up",
-        "sub" => "First response in under 60 seconds, day or night."
+        "num" => "60%",
+        "head" => "faster content production",
+        "sub" => "From topic research to published, optimized content."
     ],
     [
-        "num" => "45%",
-        "head" => "lower cost per acquisition",
-        "sub" => "By re-scoring, re-routing and retargeting the right buyers."
+        "num" => "35%",
+        "head" => "lower cost per published piece",
+        "sub" => "By automating research, drafting and publishing."
     ],
     [
-        "num" => "20+",
+        "num" => "12+",
         "head" => "native integrations",
-        "sub" => "CRMs, ad platforms, WhatsApp, email and web analytics."
+        "sub" => "CMS platforms, analytics tools, social channels and search consoles."
     ]
 ];
 
 // Sub services list
 $sub_services = [
-    ["label" => "AI Lead Generation", "tag" => "Acquire", "tile" => "tile-dashboard"],
-    ["label" => "AI Lead Nurturing", "tag" => "Engage", "tile" => "tile-orange"],
-    ["label" => "AI Lead Scoring", "tag" => "Qualify", "tile" => "tile-mint"],
-    ["label" => "AI Retargeting Automation", "tag" => "Recover", "tile" => "tile-cream-warm"]
+    ["label" => "AI SEO Automation", "tag" => "Rank", "tile" => "tile-dashboard"],
+    ["label" => "AEO Services", "tag" => "Answer", "tile" => "tile-orange"],
+    ["label" => "GEO Services", "tag" => "Cite", "tile" => "tile-mint"],
+    ["label" => "AI Content Automation", "tag" => "Publish", "tile" => "tile-cream-warm"]
 ];
 
 // Capabilities list
 $capabilities = [
     [
-        "id" => "acquire",
-        "icon" => "bi bi-crosshair",
-        "tag" => "01 · Acquire",
-        "title" => "AI Lead Generation",
-        "copy" => "Generate high-quality leads using intent-based targeting and performance marketing.",
+        "id" => "rank",
+        "icon" => "bi bi-search",
+        "tag" => "01 · Rank",
+        "title" => "AI SEO Automation",
+        "copy" => "Rank higher on search with AI-driven keyword research and on-page optimization.",
         "bullets" => [
-            "Meta, Google & LinkedIn ads",
-            "High-converting landing pages",
-            "Funnel optimization"
+            "Automated keyword clustering",
+            "AI-optimized on-page content",
+            "Technical SEO monitoring"
         ],
         "tile" => "tile-dashboard"
     ],
     [
-        "id" => "engage",
-        "icon" => "bi bi-fire",
-        "tag" => "02 · Engage",
-        "title" => "AI Lead Nurturing",
-        "copy" => "Convert cold leads into buyers with automated engagement.",
+        "id" => "answer",
+        "icon" => "bi bi-chat-square-quote",
+        "tag" => "02 · Answer",
+        "title" => "AEO Services",
+        "copy" => "Get featured in AI answer engines and voice search results.",
         "bullets" => [
-            "WhatsApp automation",
-            "Email sequences",
-            "Personalized messaging"
+            "Answer-optimized content structure",
+            "Featured snippet targeting",
+            "Voice search readiness"
         ],
         "tile" => "tile-orange"
     ],
     [
-        "id" => "qualify",
-        "icon" => "bi bi-speedometer2",
-        "tag" => "03 · Qualify",
-        "title" => "AI Lead Scoring",
-        "copy" => "Focus only on leads that matter.",
+        "id" => "cite",
+        "icon" => "bi bi-globe2",
+        "tag" => "03 · Cite",
+        "title" => "GEO Services",
+        "copy" => "Get cited and referenced by ChatGPT, Gemini and other AI models.",
         "bullets" => [
-            "Behavior tracking",
-            "Intent signals",
-            "Priority-based follow-ups"
+            "Generative engine optimization",
+            "AI citation tracking",
+            "Entity & authority building"
         ],
         "tile" => "tile-mint"
     ],
     [
-        "id" => "recover",
-        "icon" => "bi bi-arrow-repeat",
-        "tag" => "04 · Recover",
-        "title" => "AI Retargeting Automation",
-        "copy" => "Bring back lost customers and maximize ROI.",
+        "id" => "publish",
+        "icon" => "bi bi-file-earmark-richtext",
+        "tag" => "04 · Publish",
+        "title" => "AI Content Automation",
+        "copy" => "Generate and publish high-quality content at scale, automatically.",
         "bullets" => [
-            "Dynamic retargeting ads",
-            "CRM audience sync",
-            "Funnel-based messaging"
+            "AI-generated blog & landing pages",
+            "Automated publishing workflows",
+            "Content refresh & repurposing"
         ],
         "tile" => "tile-cream-warm"
     ]
@@ -200,26 +200,26 @@ $capabilities = [
 $build_steps = [
     [
         "n" => "01",
-        "t" => "Audit & Strategy",
-        "d" => "Analyze funnel, identify gaps, and map growth opportunities",
+        "t" => "Visibility Audit",
+        "d" => "Analyze search, AI answer & GEO performance gaps",
         "icon" => "bi bi-funnel"
     ],
     [
         "n" => "02",
-        "t" => "Funnel Design",
-        "d" => "Create conversion-focused journeys and automation flows",
+        "t" => "Content & Topic Design",
+        "d" => "Map keyword clusters and content pipelines",
         "icon" => "bi bi-diagram-3"
     ],
     [
         "n" => "03",
-        "t" => "Setup & Integration",
-        "d" => "Implement CRM, ads, and automation systems",
+        "t" => "Setup & Automation",
+        "d" => "Implement content generation and publishing workflows",
         "icon" => "bi bi-lightning-charge"
     ],
     [
         "n" => "04",
         "t" => "Optimize & Scale",
-        "d" => "Continuously improve performance and ROI",
+        "d" => "Continuously improve rankings, citations and reach",
         "icon" => "bi bi-graph-up-arrow"
     ]
 ];
@@ -227,23 +227,23 @@ $build_steps = [
 // Why nDimensions Us list
 $why_us_items = [
     [
-        "t" => "Performance-focused",
-        "d" => "We optimize for revenue, not vanity metrics",
+        "t" => "Visibility-focused",
+        "d" => "We optimize for search, AI answers and social reach — not vanity metrics",
         "icon" => "bi bi-crosshair"
     ],
     [
         "t" => "Fully integrated system",
-        "d" => "Ads, CRM, WhatsApp — all connected",
+        "d" => "SEO, GEO, content & social — all connected",
         "icon" => "bi bi-diagram-3"
     ],
     [
-        "t" => "Built for scalability",
-        "d" => "Designed to grow with your business",
+        "t" => "Built for scale",
+        "d" => "Designed to grow your content output without growing your team",
         "icon" => "bi bi-arrow-repeat"
     ],
     [
         "t" => "Complete ownership",
-        "d" => "You control your data and systems",
+        "d" => "You control your content, data and publishing systems",
         "icon" => "bi bi-shield-check"
     ]
 ];
@@ -253,43 +253,43 @@ $customer_cases = [
     [
         "tag" => "Case Study",
         "title" => "",
-        "quote" => "We doubled our qualified pipeline in 90 days with automation.",
+        "quote" => "We 4X'd our organic traffic in 90 days with AI content automation.",
         "body" => ""
     ],
     [
         "tag" => "Case Study",
         "title" => "",
-        "quote" => "WhatsApp + CRM automation increased our conversions by 3X.",
+        "quote" => "GEO optimization got our brand cited across ChatGPT and Gemini answers.",
         "body" => ""
     ]
 ];
 
 // Integrations list
 $integration_tools = [
-    "HubSpot", "Salesforce", "Zoho CRM", "Pipedrive", "WhatsApp Business", "Meta Ads", "Google Ads", "LinkedIn Ads", "Segment", "Google Sheets", "Slack", "Zapier"
+    "WordPress", "Webflow", "Shopify", "Google Search Console", "Google Analytics", "Ahrefs", "Semrush", "Instagram", "LinkedIn", "Facebook", "Buffer", "Notion"
 ];
 
 // FAQ list
 $faqs = [
     [
-        "q" => "Will this replace our sales team?",
-        "a" => "No. It supports your team by automating repetitive tasks and improving lead quality."
+        "q" => "Will this replace our content team?",
+        "a" => "No. It supports your team by automating research, drafting and publishing so they can focus on strategy."
     ],
     [
-        "q" => "Do we need a CRM?",
-        "a" => "No. We can integrate with your existing system or set one up."
+        "q" => "What is GEO and why does it matter?",
+        "a" => "GEO (Generative Engine Optimization) helps your brand get cited by AI tools like ChatGPT and Gemini, which is quickly becoming a major discovery channel."
     ],
     [
         "q" => "How fast can we see results?",
-        "a" => "Most businesses see improvements within 2–4 weeks."
+        "a" => "SEO and content improvements typically show within 4–8 weeks; social automation shows results faster."
     ],
     [
-        "q" => "What budget is required?",
-        "a" => "Flexible budgets based on your business goals."
+        "q" => "Do you write the content or just automate it?",
+        "a" => "Both. We build the AI systems and workflows, and can also manage content strategy and quality review."
     ],
     [
-        "q" => "Does it work with WhatsApp?",
-        "a" => "Yes. WhatsApp automation is a core part of the system."
+        "q" => "Does it work with our existing CMS?",
+        "a" => "Yes. We integrate with WordPress, Webflow, Shopify and most major CMS and social platforms."
     ]
 ];
 ?>
@@ -302,12 +302,12 @@ $faqs = [
         
         <!-- Left copy -->
         <div class="col-lg-6 fade-up">
-          <span class="eyebrow text-cream">AI Sales Automation</span>
+          <span class="eyebrow text-cream">AI SEO & Content</span>
           <h1 class="mt-4 display-3 fw-medium text-cream lh-sm">
-            AI Sales Automation That Turns <span class="serif text-lime">Leads<br> Into Revenue</span> — Automatically
+            AI SEO & Content That Turns <span class="serif text-lime">Visibility<br> Into Traffic</span> — Automatically
           </h1>
           <p class="mt-4 text-cream-muted lead max-w-500" style="font-size: 1.1rem; line-height: 1.6;">
-            Stop chasing cold leads. Start closing high-intent prospects with AI-powered lead generation, nurturing, and conversion systems.<br><br>We help you generate, nurture, score, and convert leads automatically using CRM, WhatsApp automation, and AI workflows.
+            Stop guessing what to publish. Start ranking with AI-powered SEO, AEO, GEO and content systems built to get found — on search and on AI.<br><br>We help you research, write, optimize, publish and distribute content automatically using AI, search data, and publishing workflows.
           </p>
           <div class="mt-4 pt-2 d-flex flex-wrap gap-3">
             <button class="btn-lime">
@@ -323,15 +323,15 @@ $faqs = [
           <div class="mt-5 d-flex flex-wrap gap-x-4 gap-y-2 text-cream-muted small">
             <span class="d-flex align-items-center gap-2 me-4">
               <i class="bi bi-check-lg text-lime" style="font-size: 1.1rem;"></i>
-              Increase qualified leads
+              Rank higher on search
             </span>
             <span class="d-flex align-items-center gap-2 me-4">
               <i class="bi bi-check-lg text-lime" style="font-size: 1.1rem;"></i>
-              Automate follow-ups 
+              Get cited by AI models
             </span>
             <span class="d-flex align-items-center gap-2">
               <i class="bi bi-check-lg text-lime" style="font-size: 1.1rem;"></i>
-              Close deals faster
+              Publish content at scale
             </span>
           </div>
         </div>
@@ -346,7 +346,7 @@ $faqs = [
                  style="aspect-ratio: 4/5; height: 100%; display: flex; flex-direction: column; text-decoration: none; animation: fadeUp 0.7s ease forwards; animation-delay: <?php echo ($i * 0.08); ?>s;">
                 
                 <div class="position-absolute start-0 top-0 w-100 h-100 p-3 opacity-90 transition-transform img-illustration">
-                  <?php echo get_sales_illustration($s['label'], 'w-100 h-100'); ?>
+                  <?php echo get_seo_illustration($s['label'], 'w-100 h-100'); ?>
                 </div>
                 <div class="position-absolute start-0 top-0 w-100 h-100 z-1" style="background: linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(7,26,18,0.85) 100%);"></div>
                 
@@ -371,13 +371,13 @@ $faqs = [
       <!-- Flow Card -->
       <div class="p-4 p-md-5 text-center rounded-5" style="background: #efe8dc; border: 1px solid rgba(14, 42, 30, 0.08);">
         <h2 class="display-5 text-forest mb-2">
-          AI Sales Automation <span class="serif">Flow</span>
+          AI SEO & Content <span class="serif">Flow</span>
         </h2>
-        <h3 class="text-dark-muted small max-w-500 mx-auto mb-3" style="font-size: 1rem;">From Click to Conversion — Fully Automated</h3>
+        <h3 class="text-dark-muted small max-w-500 mx-auto mb-3" style="font-size: 1rem;">From Topic to Traffic — Fully Automated</h3>
         <p class="text-dark-muted small max-w-500 mx-auto" style="font-size: 0.95rem;">
-          <b>Capture → Qualify → Nurture → Convert → Scale</b>
+          <b>Research → Cluster → Publish → Track → Scale</b>
         </p>
-        <p class="text-dark-muted small max-w-500 mx-auto mb-5" style="font-size: 0.95rem;">Automate your entire sales journey using AI-powered workflows and real-time data tracking.</p>
+        <p class="text-dark-muted small max-w-500 mx-auto mb-5" style="font-size: 0.95rem;">Automate your entire content journey using AI-powered workflows and real-time visibility tracking.</p>
 
         <!-- Cards Row -->
         <div class="stats-steps-container">
@@ -403,34 +403,7 @@ $faqs = [
           <?php endforeach; ?>
         </div>
 
-        <!-- Loop Connector Row
-        <div class="d-flex align-items-center mt-3" style="height: 32px; overflow: visible;">
-          <svg width="100%" height="32" viewBox="0 0 200 32" preserveAspectRatio="none" style="flex: 1; overflow: visible; max-width: calc(50% - 20px);">
-            <defs>
-              <marker id="aL" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-                <path d="M8 1L2 5L8 9" fill="none" stroke="#0e2b1e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-              </marker>
-            </defs>
-            <polyline points="200,2 3,2 3,30" fill="none" stroke="#0e2b1e" stroke-width="1.5" marker-end="url(#aL)" />
-          </svg>
-
-          <div class="rounded-circle border border-dark border-1 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 30px; height: 30px; border-color: #0e2b1e !important;">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0e2b1e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M23 4v6h-6" />
-              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
-            </svg>
-          </div>
-
-          <svg width="100%" height="32" viewBox="0 0 200 32" preserveAspectRatio="none" style="flex: 1; overflow: visible; max-width: calc(50% - 20px);">
-            <defs>
-              <marker id="aR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-                <path d="M2 1L8 5L2 9" fill="none" stroke="#0e2b1e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-              </marker>
-            </defs>
-            <polyline points="0,2 197,2 197,30" fill="none" stroke="#0e2b1e" stroke-width="1.5" marker-end="url(#aR)" />
-          </svg>
-        </div>
-      </div> -->
+      </div>
 
     </div>
   </section>
@@ -438,13 +411,10 @@ $faqs = [
   <!-- Capabilities Section -->
   <section id="capabilities" class="bg-cream text-dark py-5 border-top border-cream-line">
     <div class="container max-w-1300 px-4 py-5">
-      <span class="eyebrow">The Sales Engine</span>
+      <span class="eyebrow">The Visibility Engine</span>
       <h2 class="mt-4 display-4 fw-medium text-forest max-w-4xl lh-sm">
-        4 <span class="serif">Pillars of </span>AI Sales Automation
+        4 <span class="serif">Pillars of </span>AI SEO & Content
       </h2>
-      <!-- <p class="mt-4 text-dark-muted lead max-w-600">
-        Every stage of your funnel gets an AI layer that removes manual work, speeds up response, and compounds over time.
-      </p> -->
 
       <div class="mt-5 row row-cols-1 row-cols-md-2 g-4 g-lg-5">
         <?php foreach ($capabilities as $cap): ?>
@@ -453,7 +423,7 @@ $faqs = [
             
             <div class="<?php echo $cap['tile']; ?> rounded-4 overflow-hidden mb-4 position-relative" style="aspect-ratio: 16/9;">
               <div class="position-absolute start-0 top-0 w-100 h-100 p-4">
-                <?php echo get_sales_illustration($cap['title'], 'w-100 h-100'); ?>
+                <?php echo get_seo_illustration($cap['title'], 'w-100 h-100'); ?>
               </div>
             </div>
 
@@ -521,7 +491,7 @@ $faqs = [
     <div class="container max-w-1300 px-4 py-5">
       <span class="eyebrow">Why nDimensions</span>
       <h2 class="mt-4 display-4 fw-medium text-forest max-w-3xl lh-sm">
-        Not an Agency. <span class="serif">Your Revenue Partner.</span>
+        Not an Agency. <span class="serif">Your Visibility Partner.</span>
       </h2>
 
       <div class="mt-5 row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -611,8 +581,8 @@ $faqs = [
 
   <!-- CTA Banner Section -->
   <?php
-  $cta_title = 'Turn Your Sales Funnel Into a <span class="serif text-lime">Revenue Machine</span>';
-  $cta_desc = 'Stop losing leads. Start converting automatically.';
+  $cta_title = 'Turn Your Content Into an <span class="serif text-lime">AI Visibility Machine</span>';
+  $cta_desc = 'Stop guessing what ranks. Start getting found, on search and on AI.';
   include __DIR__ . '/cta.php';
   ?>
 </main>

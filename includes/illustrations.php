@@ -142,3 +142,49 @@ function get_sales_illustration($title, $class = '') {
             return '';
     }
 }
+
+function get_business_illustration($title, $class = '') {
+    switch ($title) {
+        case 'AI Workflow Automation':
+            return get_radar_illustration($class);
+        case 'Business Process Automation':
+            return get_nurture_illustration($class);
+        case 'Document Automation':
+            return get_scoring_illustration($class);
+        case 'Email Automation':
+            return get_retarget_illustration($class);
+        default:
+            return '';
+    }
+}
+
+function get_seo_illustration($title, $class = '') {
+    switch ($title) {
+        case 'AI SEO Automation':
+            return get_radar_illustration($class);
+        case 'AEO Services':
+            return get_nurture_illustration($class);
+        case 'GEO Services':
+            return get_scoring_illustration($class);
+        case 'AI Content Automation':
+            return get_retarget_illustration($class);
+        default:
+            return '';
+    }
+}
+
+function get_creative_illustration($title, $class = '') {
+    switch ($title) {
+        case 'AI Product Photography':
+            return get_radar_illustration($class);
+        case 'AI Video Generation':
+            return get_nurture_illustration($class);
+        case 'AI Ad Creative Automation':
+            return get_scoring_illustration($class);
+        case 'AI Visual Content Automation':
+            return get_retarget_illustration($class);
+        default:
+            return '';
+    }
+}
+

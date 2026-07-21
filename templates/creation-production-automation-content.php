@@ -1,18 +1,18 @@
 <?php
 /**
- * nDimensions AI — Sales Automation Page Content
- * Ported from SalesAutomation.jsx and translated to Bootstrap 5 + Custom CSS
+ * nDimensions AI — AI Creative Production Page Content
+ * Same structure/animations as Sales Automation page, content updated for AI Creative Production
  */
 
 // Load SVG Helpers
 include_once __DIR__ . '/../includes/illustrations.php';
 
-// Steps Data for the Flow Visualizer
+// Steps Data for the Flow Visualizer (icons & animation classes unchanged)
 $flow_steps = [
     [
         "num" => 1,
-        "title" => "Lead Captured",
-        "sub" => "Capture leads from ads, website & landing pages",
+        "title" => "Assets Captured",
+        "sub" => "Upload product shots, briefs & brand references",
         "icon" => '
         <svg width="58" height="52" viewBox="0 0 58 52" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="4" y="16" width="40" height="30" rx="4" />
@@ -27,8 +27,8 @@ $flow_steps = [
     ],
     [
         "num" => 2,
-        "title" => "Smart Segmentation",
-        "sub" => "Qualify leads using AI-based filtering",
+        "title" => "Smart Styling",
+        "sub" => "Match brand style & format using AI-based presets",
         "icon" => '
         <svg width="58" height="56" viewBox="0 0 58 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="16" cy="8" r="3.5" class="flow-step2-in-1" />
@@ -40,8 +40,8 @@ $flow_steps = [
     ],
     [
         "num" => 3,
-        "title" => "Automated Nurturing",
-        "sub" => "Automate follow-ups via WhatsApp & email
+        "title" => "Automated Generation",
+        "sub" => "Generate visuals, videos & ad creatives automatically
 ",
         "icon" => '
         <svg width="64" height="56" viewBox="0 0 64 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -58,8 +58,8 @@ $flow_steps = [
     ],
     [
         "num" => 4,
-        "title" => "Engagement Analytics",
-        "sub" => "Score leads based on behavior & intent",
+        "title" => "Performance Analytics",
+        "sub" => "Track creative performance across channels",
         "icon" => '
         <svg width="60" height="54" viewBox="0 0 60 54" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="4" y="36" width="9" height="14" rx="2" class="flow-step4-bar flow-step4-bar-1" />
@@ -71,8 +71,8 @@ $flow_steps = [
     ],
     [
         "num" => 5,
-        "title" => "Lead Scoring",
-        "sub" => "Retarget drop-offs across platforms",
+        "title" => "Variant Scoring",
+        "sub" => "Score creative variations by predicted engagement",
         "icon" => '
         <svg width="60" height="56" viewBox="0 0 60 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <g class="flow-step5-profile">
@@ -88,12 +88,12 @@ $flow_steps = [
     ],
     [
         "num" => 6,
-        "title" => "CRM + Sales Handoff",
-        "sub" => "Track conversions with CRM integration",
+        "title" => "Delivery + Handoff",
+        "sub" => "Export to ad platforms, Shopify & content calendars",
         "icon" => '
         <svg width="66" height="56" viewBox="0 0 66 56" fill="none" stroke="#b5f23d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <rect x="4" y="8" width="40" height="40" rx="5" />
-            <text x="10" y="24" font-size="8" font-weight="700" fill="#b5f23d" stroke="none" font-family="sans-serif" letter-spacing="0.5">CRM</text>
+            <text x="10" y="24" font-size="8" font-weight="700" fill="#b5f23d" stroke="none" font-family="sans-serif" letter-spacing="0.5">ADS</text>
             <line x1="10" y1="30" x2="34" y2="30" class="flow-step6-txt-1" />
             <line x1="10" y1="36" x2="34" y2="36" class="flow-step6-txt-2" />
             <line x1="10" y1="42" x2="28" y2="42" class="flow-step6-txt-3" />
@@ -111,86 +111,86 @@ $flow_steps = [
 // Stats metrics array
 $metrics = [
     [
-        "num" => "3.4&times;",
-        "head" => "more sales-qualified leads",
-        "sub" => "vs. non-automated funnels — nDimensions client average."
+        "num" => "5&times;",
+        "head" => "more creative variations produced",
+        "sub" => "vs. traditional photo/video shoots — nDimensions client average."
     ],
     [
-        "num" => "68%",
-        "head" => "faster lead follow-up",
-        "sub" => "First response in under 60 seconds, day or night."
+        "num" => "80%",
+        "head" => "faster turnaround time",
+        "sub" => "From brief to ready-to-publish creative assets."
     ],
     [
-        "num" => "45%",
-        "head" => "lower cost per acquisition",
-        "sub" => "By re-scoring, re-routing and retargeting the right buyers."
+        "num" => "55%",
+        "head" => "lower cost per creative asset",
+        "sub" => "By removing repeat shoots, edits and manual production."
     ],
     [
-        "num" => "20+",
+        "num" => "10+",
         "head" => "native integrations",
-        "sub" => "CRMs, ad platforms, WhatsApp, email and web analytics."
+        "sub" => "Shopify, Meta Ads, Google Ads, CMS and content calendars."
     ]
 ];
 
 // Sub services list
 $sub_services = [
-    ["label" => "AI Lead Generation", "tag" => "Acquire", "tile" => "tile-dashboard"],
-    ["label" => "AI Lead Nurturing", "tag" => "Engage", "tile" => "tile-orange"],
-    ["label" => "AI Lead Scoring", "tag" => "Qualify", "tile" => "tile-mint"],
-    ["label" => "AI Retargeting Automation", "tag" => "Recover", "tile" => "tile-cream-warm"]
+    ["label" => "AI Product Photography", "tag" => "Capture", "tile" => "tile-dashboard"],
+    ["label" => "AI Video Generation", "tag" => "Animate", "tile" => "tile-orange"],
+    ["label" => "AI Ad Creative Automation", "tag" => "Convert", "tile" => "tile-mint"],
+    ["label" => "AI Visual Content Automation", "tag" => "Scale", "tile" => "tile-cream-warm"]
 ];
 
 // Capabilities list
 $capabilities = [
     [
-        "id" => "acquire",
-        "icon" => "bi bi-crosshair",
-        "tag" => "01 · Acquire",
-        "title" => "AI Lead Generation",
-        "copy" => "Generate high-quality leads using intent-based targeting and performance marketing.",
+        "id" => "capture",
+        "icon" => "bi bi-camera",
+        "tag" => "01 · Capture",
+        "title" => "AI Product Photography",
+        "copy" => "Generate studio-quality product photos without a physical shoot.",
         "bullets" => [
-            "Meta, Google & LinkedIn ads",
-            "High-converting landing pages",
-            "Funnel optimization"
+            "AI-generated product shots",
+            "Automated background & lighting",
+            "AI product photo editing"
         ],
         "tile" => "tile-dashboard"
     ],
     [
-        "id" => "engage",
-        "icon" => "bi bi-fire",
-        "tag" => "02 · Engage",
-        "title" => "AI Lead Nurturing",
-        "copy" => "Convert cold leads into buyers with automated engagement.",
+        "id" => "animate",
+        "icon" => "bi bi-camera-reels",
+        "tag" => "02 · Animate",
+        "title" => "AI Video Generation",
+        "copy" => "Turn static assets into scroll-stopping product and brand videos.",
         "bullets" => [
-            "WhatsApp automation",
-            "Email sequences",
-            "Personalized messaging"
+            "Text-to-video generation",
+            "Auto-generated product demos",
+            "Multi-format video output"
         ],
         "tile" => "tile-orange"
     ],
     [
-        "id" => "qualify",
-        "icon" => "bi bi-speedometer2",
-        "tag" => "03 · Qualify",
-        "title" => "AI Lead Scoring",
-        "copy" => "Focus only on leads that matter.",
+        "id" => "convert",
+        "icon" => "bi bi-megaphone",
+        "tag" => "03 · Convert",
+        "title" => "AI Ad Creative Automation",
+        "copy" => "Produce high-converting ad creatives at the speed your campaigns need.",
         "bullets" => [
-            "Behavior tracking",
-            "Intent signals",
-            "Priority-based follow-ups"
+            "Automated ad variant generation",
+            "Platform-ready ad sizing",
+            "Performance-based creative testing"
         ],
         "tile" => "tile-mint"
     ],
     [
-        "id" => "recover",
-        "icon" => "bi bi-arrow-repeat",
-        "tag" => "04 · Recover",
-        "title" => "AI Retargeting Automation",
-        "copy" => "Bring back lost customers and maximize ROI.",
+        "id" => "scale",
+        "icon" => "bi bi-grid-3x3-gap",
+        "tag" => "04 · Scale",
+        "title" => "AI Visual Content Automation",
+        "copy" => "Generate content variations across formats and channels, automatically.",
         "bullets" => [
-            "Dynamic retargeting ads",
-            "CRM audience sync",
-            "Funnel-based messaging"
+            "Bulk visual content generation",
+            "Brand-consistent variations",
+            "Multi-channel asset export"
         ],
         "tile" => "tile-cream-warm"
     ]
@@ -200,26 +200,26 @@ $capabilities = [
 $build_steps = [
     [
         "n" => "01",
-        "t" => "Audit & Strategy",
-        "d" => "Analyze funnel, identify gaps, and map growth opportunities",
+        "t" => "Brand & Asset Audit",
+        "d" => "Review existing assets and define visual style guidelines",
         "icon" => "bi bi-funnel"
     ],
     [
         "n" => "02",
-        "t" => "Funnel Design",
-        "d" => "Create conversion-focused journeys and automation flows",
+        "t" => "Creative System Design",
+        "d" => "Build reusable templates and generation workflows",
         "icon" => "bi bi-diagram-3"
     ],
     [
         "n" => "03",
-        "t" => "Setup & Integration",
-        "d" => "Implement CRM, ads, and automation systems",
+        "t" => "Setup & Automation",
+        "d" => "Implement AI generation and delivery pipelines",
         "icon" => "bi bi-lightning-charge"
     ],
     [
         "n" => "04",
         "t" => "Optimize & Scale",
-        "d" => "Continuously improve performance and ROI",
+        "d" => "Continuously improve output quality and creative performance",
         "icon" => "bi bi-graph-up-arrow"
     ]
 ];
@@ -228,22 +228,22 @@ $build_steps = [
 $why_us_items = [
     [
         "t" => "Performance-focused",
-        "d" => "We optimize for revenue, not vanity metrics",
+        "d" => "We optimize creatives for conversions, not just aesthetics",
         "icon" => "bi bi-crosshair"
     ],
     [
         "t" => "Fully integrated system",
-        "d" => "Ads, CRM, WhatsApp — all connected",
+        "d" => "Photography, video, ads & content — all connected",
         "icon" => "bi bi-diagram-3"
     ],
     [
-        "t" => "Built for scalability",
-        "d" => "Designed to grow with your business",
+        "t" => "Built for scale",
+        "d" => "Produce hundreds of variations without hundreds of shoots",
         "icon" => "bi bi-arrow-repeat"
     ],
     [
         "t" => "Complete ownership",
-        "d" => "You control your data and systems",
+        "d" => "You control your assets, brand style and creative systems",
         "icon" => "bi bi-shield-check"
     ]
 ];
@@ -253,43 +253,43 @@ $customer_cases = [
     [
         "tag" => "Case Study",
         "title" => "",
-        "quote" => "We doubled our qualified pipeline in 90 days with automation.",
+        "quote" => "We produced 5X more ad creatives without hiring a bigger team.",
         "body" => ""
     ],
     [
         "tag" => "Case Study",
         "title" => "",
-        "quote" => "WhatsApp + CRM automation increased our conversions by 3X.",
+        "quote" => "AI product photography cut our shoot costs by more than half.",
         "body" => ""
     ]
 ];
 
 // Integrations list
 $integration_tools = [
-    "HubSpot", "Salesforce", "Zoho CRM", "Pipedrive", "WhatsApp Business", "Meta Ads", "Google Ads", "LinkedIn Ads", "Segment", "Google Sheets", "Slack", "Zapier"
+    "Shopify", "Meta Ads", "Google Ads", "TikTok Ads", "Canva", "Figma", "Instagram", "Pinterest", "Google Drive", "Notion", "Buffer", "WordPress"
 ];
 
 // FAQ list
 $faqs = [
     [
-        "q" => "Will this replace our sales team?",
-        "a" => "No. It supports your team by automating repetitive tasks and improving lead quality."
+        "q" => "Will this replace our photographers and designers?",
+        "a" => "No. It supports your creative team by automating repetitive production work so they can focus on strategy and quality."
     ],
     [
-        "q" => "Do we need a CRM?",
-        "a" => "No. We can integrate with your existing system or set one up."
+        "q" => "Do we need to upload existing product photos?",
+        "a" => "Ideally yes, for the most accurate results — but we can also generate assets from briefs and references alone."
     ],
     [
         "q" => "How fast can we see results?",
-        "a" => "Most businesses see improvements within 2–4 weeks."
+        "a" => "Most businesses start receiving production-ready creatives within 1–2 weeks of setup."
     ],
     [
         "q" => "What budget is required?",
-        "a" => "Flexible budgets based on your business goals."
+        "a" => "Flexible budgets based on your creative volume and channels."
     ],
     [
-        "q" => "Does it work with WhatsApp?",
-        "a" => "Yes. WhatsApp automation is a core part of the system."
+        "q" => "Can it generate ad creatives in multiple formats and sizes?",
+        "a" => "Yes. We generate platform-ready variations for Meta, Google, TikTok and more."
     ]
 ];
 ?>
@@ -302,12 +302,12 @@ $faqs = [
         
         <!-- Left copy -->
         <div class="col-lg-6 fade-up">
-          <span class="eyebrow text-cream">AI Sales Automation</span>
+          <span class="eyebrow text-cream">AI Creative Production</span>
           <h1 class="mt-4 display-3 fw-medium text-cream lh-sm">
-            AI Sales Automation That Turns <span class="serif text-lime">Leads<br> Into Revenue</span> — Automatically
+            AI Creative Production That Turns <span class="serif text-lime">Briefs<br> Into Assets</span> — Automatically
           </h1>
           <p class="mt-4 text-cream-muted lead max-w-500" style="font-size: 1.1rem; line-height: 1.6;">
-            Stop chasing cold leads. Start closing high-intent prospects with AI-powered lead generation, nurturing, and conversion systems.<br><br>We help you generate, nurture, score, and convert leads automatically using CRM, WhatsApp automation, and AI workflows.
+            Stop waiting weeks for shoots and edits. Start producing product visuals, videos, and ad creatives at scale with AI-powered creative systems.<br><br>We help you generate, edit, animate, and distribute visual content automatically using AI, brand systems, and ad platform integrations.
           </p>
           <div class="mt-4 pt-2 d-flex flex-wrap gap-3">
             <button class="btn-lime">
@@ -323,15 +323,15 @@ $faqs = [
           <div class="mt-5 d-flex flex-wrap gap-x-4 gap-y-2 text-cream-muted small">
             <span class="d-flex align-items-center gap-2 me-4">
               <i class="bi bi-check-lg text-lime" style="font-size: 1.1rem;"></i>
-              Increase qualified leads
+              Produce assets at scale
             </span>
             <span class="d-flex align-items-center gap-2 me-4">
               <i class="bi bi-check-lg text-lime" style="font-size: 1.1rem;"></i>
-              Automate follow-ups 
+              Cut production costs
             </span>
             <span class="d-flex align-items-center gap-2">
               <i class="bi bi-check-lg text-lime" style="font-size: 1.1rem;"></i>
-              Close deals faster
+              Launch campaigns faster
             </span>
           </div>
         </div>
@@ -346,7 +346,7 @@ $faqs = [
                  style="aspect-ratio: 4/5; height: 100%; display: flex; flex-direction: column; text-decoration: none; animation: fadeUp 0.7s ease forwards; animation-delay: <?php echo ($i * 0.08); ?>s;">
                 
                 <div class="position-absolute start-0 top-0 w-100 h-100 p-3 opacity-90 transition-transform img-illustration">
-                  <?php echo get_sales_illustration($s['label'], 'w-100 h-100'); ?>
+                  <?php echo get_creative_illustration($s['label'], 'w-100 h-100'); ?>
                 </div>
                 <div class="position-absolute start-0 top-0 w-100 h-100 z-1" style="background: linear-gradient(180deg, rgba(0,0,0,0) 45%, rgba(7,26,18,0.85) 100%);"></div>
                 
@@ -371,13 +371,13 @@ $faqs = [
       <!-- Flow Card -->
       <div class="p-4 p-md-5 text-center rounded-5" style="background: #efe8dc; border: 1px solid rgba(14, 42, 30, 0.08);">
         <h2 class="display-5 text-forest mb-2">
-          AI Sales Automation <span class="serif">Flow</span>
+          AI Creative Production <span class="serif">Flow</span>
         </h2>
-        <h3 class="text-dark-muted small max-w-500 mx-auto mb-3" style="font-size: 1rem;">From Click to Conversion — Fully Automated</h3>
+        <h3 class="text-dark-muted small max-w-500 mx-auto mb-3" style="font-size: 1rem;">From Brief to Published Asset — Fully Automated</h3>
         <p class="text-dark-muted small max-w-500 mx-auto" style="font-size: 0.95rem;">
-          <b>Capture → Qualify → Nurture → Convert → Scale</b>
+          <b>Capture → Style → Generate → Score → Scale</b>
         </p>
-        <p class="text-dark-muted small max-w-500 mx-auto mb-5" style="font-size: 0.95rem;">Automate your entire sales journey using AI-powered workflows and real-time data tracking.</p>
+        <p class="text-dark-muted small max-w-500 mx-auto mb-5" style="font-size: 0.95rem;">Automate your entire creative production journey using AI-powered workflows and real-time performance tracking.</p>
 
         <!-- Cards Row -->
         <div class="stats-steps-container">
@@ -403,34 +403,7 @@ $faqs = [
           <?php endforeach; ?>
         </div>
 
-        <!-- Loop Connector Row
-        <div class="d-flex align-items-center mt-3" style="height: 32px; overflow: visible;">
-          <svg width="100%" height="32" viewBox="0 0 200 32" preserveAspectRatio="none" style="flex: 1; overflow: visible; max-width: calc(50% - 20px);">
-            <defs>
-              <marker id="aL" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-                <path d="M8 1L2 5L8 9" fill="none" stroke="#0e2b1e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-              </marker>
-            </defs>
-            <polyline points="200,2 3,2 3,30" fill="none" stroke="#0e2b1e" stroke-width="1.5" marker-end="url(#aL)" />
-          </svg>
-
-          <div class="rounded-circle border border-dark border-1 d-flex align-items-center justify-content-center flex-shrink-0" style="width: 30px; height: 30px; border-color: #0e2b1e !important;">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0e2b1e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M23 4v6h-6" />
-              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
-            </svg>
-          </div>
-
-          <svg width="100%" height="32" viewBox="0 0 200 32" preserveAspectRatio="none" style="flex: 1; overflow: visible; max-width: calc(50% - 20px);">
-            <defs>
-              <marker id="aR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-                <path d="M2 1L8 5L2 9" fill="none" stroke="#0e2b1e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-              </marker>
-            </defs>
-            <polyline points="0,2 197,2 197,30" fill="none" stroke="#0e2b1e" stroke-width="1.5" marker-end="url(#aR)" />
-          </svg>
-        </div>
-      </div> -->
+      </div>
 
     </div>
   </section>
@@ -438,13 +411,10 @@ $faqs = [
   <!-- Capabilities Section -->
   <section id="capabilities" class="bg-cream text-dark py-5 border-top border-cream-line">
     <div class="container max-w-1300 px-4 py-5">
-      <span class="eyebrow">The Sales Engine</span>
+      <span class="eyebrow">The Creative Engine</span>
       <h2 class="mt-4 display-4 fw-medium text-forest max-w-4xl lh-sm">
-        4 <span class="serif">Pillars of </span>AI Sales Automation
+        4 <span class="serif">Pillars of </span>AI Creative Production
       </h2>
-      <!-- <p class="mt-4 text-dark-muted lead max-w-600">
-        Every stage of your funnel gets an AI layer that removes manual work, speeds up response, and compounds over time.
-      </p> -->
 
       <div class="mt-5 row row-cols-1 row-cols-md-2 g-4 g-lg-5">
         <?php foreach ($capabilities as $cap): ?>
@@ -453,7 +423,7 @@ $faqs = [
             
             <div class="<?php echo $cap['tile']; ?> rounded-4 overflow-hidden mb-4 position-relative" style="aspect-ratio: 16/9;">
               <div class="position-absolute start-0 top-0 w-100 h-100 p-4">
-                <?php echo get_sales_illustration($cap['title'], 'w-100 h-100'); ?>
+                <?php echo get_creative_illustration($cap['title'], 'w-100 h-100'); ?>
               </div>
             </div>
 
@@ -521,7 +491,7 @@ $faqs = [
     <div class="container max-w-1300 px-4 py-5">
       <span class="eyebrow">Why nDimensions</span>
       <h2 class="mt-4 display-4 fw-medium text-forest max-w-3xl lh-sm">
-        Not an Agency. <span class="serif">Your Revenue Partner.</span>
+        Not an Agency. <span class="serif">Your Creative Partner.</span>
       </h2>
 
       <div class="mt-5 row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -611,8 +581,8 @@ $faqs = [
 
   <!-- CTA Banner Section -->
   <?php
-  $cta_title = 'Turn Your Sales Funnel Into a <span class="serif text-lime">Revenue Machine</span>';
-  $cta_desc = 'Stop losing leads. Start converting automatically.';
+  $cta_title = 'Turn Your Creative Pipeline Into a <span class="serif text-lime">Production Machine</span>';
+  $cta_desc = 'Stop waiting on shoots and edits. Start generating creative at scale.';
   include __DIR__ . '/cta.php';
   ?>
 </main>
